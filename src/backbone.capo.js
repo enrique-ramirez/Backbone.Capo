@@ -2,7 +2,7 @@
  *     Backbone.capo.js v0.0.1
  *
  *     (c) 2010-2013 Enrique Ramirez, wepow.
- *     Backbone.capo may be freely distributed under the MIT license.
+ *     Backbone.Capo may be freely distributed under the MIT license.
  */
 
 var Capo = (function(Backbone, _, root, document, undefined) {
@@ -32,7 +32,7 @@ var Capo = (function(Backbone, _, root, document, undefined) {
             var builtViews = {},
                 newIndex;
 
-            _.each(this.views, function(index, Value) {
+            _.each(this.views, function(Value, index) {
                 newIndex = index.charAt(0).toLowerCase() + index.slice(1);
                 builtViews[newIndex] = new Value();
             });
@@ -49,7 +49,7 @@ var Capo = (function(Backbone, _, root, document, undefined) {
             var builtModels = {},
                 newIndex;
 
-            _.each(this.models, function(index, Value) {
+            _.each(this.models, function(Value, index) {
                 newIndex = index.charAt(0).toLowerCase() + index.slice(1);
                 builtModels[newIndex] = new Value();
             });
