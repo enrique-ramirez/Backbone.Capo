@@ -1,5 +1,5 @@
 /**
- *     Backbone.capo.js v0.0.1
+ *     Backbone.capo.js v0.0.2
  *
  *     (c) 2010-2013 Enrique Ramirez, wepow.
  *     Backbone.Capo may be freely distributed under the MIT license.
