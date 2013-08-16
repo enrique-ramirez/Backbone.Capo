@@ -89,8 +89,8 @@ var Capo = (function(Backbone, _, root, document, undefined) {
                 // Due to a lack of inspiration to find a solution
                 // that does not end in an infinite loop, it iss here
                 // for now.
-                _.each(view.assigned, function() {
-                    this.close();
+                _.each(view.assigned, function(view) {
+                    view.close();
                 });
 
                 view.close();
